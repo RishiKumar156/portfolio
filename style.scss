@@ -65,7 +65,7 @@
   color: #007bff;
 }
 .banner {
-  height: 80vh;
+  height: 100vh;
   margin-top: 4rem;
   background-color: #1d2226;
   display: grid;
@@ -86,9 +86,17 @@
     flex-direction: column;
   }
   h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     font-weight: 200;
     font-size: 1.5rem;
+    a {
+      font-size: 1rem;
+      color: white;
+      transition: all 0.3s ease-in;
+    }
+    a:hover {
+      color: #007bff;
+    }
     span {
       font-size: 2.2rem;
       font-weight: 300;
@@ -97,16 +105,18 @@
     }
   }
   p {
-    margin-left: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 300;
     span {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin: 0 0.5rem;
-      font-weight: 200;
-      color: black;
+      color: #007bff;
     }
+  }
+  .abt {
+    margin: 1rem 0;
+    font-size: 0.8rem;
   }
   .img {
     display: flex;
@@ -115,8 +125,7 @@
     justify-content: center;
     align-items: center;
     img {
-      width: 50%;
-      box-shadow: 0 1rem 3rem rgb(0, 123, 255, 0.3);
+      width: 70%;
     }
   }
   button {
@@ -290,9 +299,9 @@
           margin-bottom: 1.5rem;
           font-size: 1.5rem;
           font-weight: 300;
+          color: #007bff;
         }
         p {
-          color: #007bff;
           margin-left: 0.5rem;
           font-size: 0.8rem;
         }
@@ -588,10 +597,22 @@
           font-size: 1rem;
           margin: 1rem 0;
         }
+        p {
+          font-size: 0.7rem;
+        }
+        .abt {
+          font-size: 0.5rem;
+        }
         span {
           margin: 0 0.5rem;
+          font-size: 1.2rem;
         }
-        margin: 0;
+        margin: 1rem;
+        button {
+          a {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
@@ -611,10 +632,35 @@
         width: 100%;
         padding-top: 0 !important;
         padding: 3rem;
+        h3 {
+          font-size: 1.5rem;
+          color: #007bff;
+        }
+        p {
+          font-size: 0.6rem;
+        }
       }
     }
   }
   #contact .container {
     padding: 1rem 2rem;
+  }
+  #service {
+    .card-wrapper {
+      .cards {
+        .container {
+          h3 {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+          }
+          p {
+            font-size: 0.7rem;
+            color: black;
+            margin: 0;
+          }
+          padding: 1.8rem;
+        }
+      }
+    }
   }
 }
